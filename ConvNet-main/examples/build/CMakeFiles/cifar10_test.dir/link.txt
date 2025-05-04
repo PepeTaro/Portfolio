@@ -1,0 +1,1 @@
+/usr/bin/c++  -fopenmp CMakeFiles/cifar10_test.dir/cifar10_test.cpp.o -o cifar10_test  libconvnet.a -lsfml-graphics -lsfml-window -lsfml-system 

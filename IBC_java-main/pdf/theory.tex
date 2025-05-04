@@ -1,0 +1,73 @@
+\documentclass{jsarticle}
+\bibliographystyle{jplain}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+
+\begin{document}
+\section{定義}
+$E$を$y^{2} = x^{3} + 1$で定義される$F_{q}$上の楕円曲線とする、ここで$q \equiv 2 \mod 3$とする。
+$E[n]$を$E[n] = \{P \in E(\overline{F_{q}}) : [n]P = \infty\}$として定義する、ここで$\overline{F_{q}}$は$F_{q}$の代数的閉包。
+$\omega \in F_{q^{2}}$を$1$の原始三乗根とする。
+以下のようにしてdistortion mapを定義する:
+\begin{align*}
+  \phi:E(F_{p^{2}}) \rightarrow E(F_{p^{2}}), (x,y) \mapsto (\omega x,y),\phi(\infty) = \infty
+\end{align*}
+
+以下のようしてmodified Weil pairingを定義する:
+\begin{align*}
+  \tilde{e}_{n}(P_{1},P_{2}) = e_n(P_{1},\phi(P_{2}))
+\end{align*}
+ここで$e_{n}$はWeil pairing、$P_{1},P_{2} \in E[n]$
+
+\section{IDベース暗号}
+\begin{enumerate}
+\item $q = 6l - 1$をみたす素数$q$を選ぶ
+\item $E(F_{p})$内から位数$l$をもつ点$P$を選ぶ
+\item $H_{1}$を、インプットとして任意の長さの2進数文字列を受け取り、アウトプットとして位数$l$をもつ$E$上の点を返すハッシュ関数とする。$H_{2}$を、インプットとして位数$l$をもつ$F_{p^2}^{\times}$($F_{p^2}$の単元からなる集合)の元を受け取り、アウトプットとして長さ$n$の2進数文字列を返すハッシュ関数とする、ここで$n$は平文の長さ
+\item 乱数$s \in F_{l}^{\times}$を選び、$P_{pub} = sP$を計算する
+\item $p,H_{1},H_{2},n,P,P_{pub}$を公開し、$s$を秘密にする
+\end{enumerate}
+
+IDとして文字列$ID$をもつユーザーが秘密鍵を欲しい場合、信頼できる第三者が以下を行う。
+\begin{enumerate}
+\item $Q_{ID} = H_{1}(ID)$を計算する
+\item $D_{ID} = sQ_{ID}$を計算する
+\item $D_{ID}$をそのユーザーに渡す
+\end{enumerate}
+
+アリスが平文$M$をボブに送りたい場合、アリスは以下を行う。
+\begin{enumerate}
+\item ボブのIDが$ID$である場合、$Q_{ID} = H_{1}(ID)$を計算する
+\item 乱数$r \in F_{l}^{\times}$を選ぶ
+\item $g_{ID} = \tilde{e}_{l}(Q_{ID},P_{pub})$を計算する
+\item 暗号文を以下のように定義する:
+  \begin{align*}
+    c = (rP,M \oplus H_{2}(g_{ID}^{r}))
+  \end{align*}
+\end{enumerate}
+
+ボブが暗号文$(u,v)$を復号化したい場合、ボブは以下を行う。
+\begin{enumerate}
+\item 秘密鍵$D_{ID}$を使用して、$h_{ID} = \tilde{e}_{l}(D_{ID},u)$を計算する
+\item $m = v \oplus H_{2}(h_{ID})$を計算する
+\end{enumerate}
+
+$m$が復号文となる。
+
+\bigskip
+\begin{thebibliography}{9}
+  \bibitem{texbook}
+    Lawrence C. Washington. Elliptic Curves Number Theory and Cryptography, Second Edition
+  \bibitem{texbook}
+    J.H. Silverman, Jill Pipher, Jeffrey Hoffstein. An Introduction to Mathematical Cryptography
+  \bibitem{texbook}
+    Craig Costello. Pairings for beginners.
+  \bibitem{texbook}
+    Ben Lynn. ON THE IMPLEMENTATION OF PAIRING-BASED CRYPTOSYSTEMS.    
+  \bibitem{texbook}
+  R. W. Mak.Identity-based encryption using supersingular curves with the Weil pairing.
+
+\end{thebibliography}
+
+
+\end{document}

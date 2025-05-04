@@ -1,0 +1,1 @@
+/usr/bin/c++  -fopenmp CMakeFiles/dense_test.dir/gtest_main.cpp.o CMakeFiles/dense_test.dir/dense_test.cpp.o CMakeFiles/dense_test.dir/utils_for_test.cpp.o -o dense_test  libconvnet.a -lgtest 

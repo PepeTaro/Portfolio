@@ -1,0 +1,1 @@
+/usr/bin/c++  -fopenmp CMakeFiles/gear.dir/gear.cpp.o CMakeFiles/gear.dir/x11.cpp.o CMakeFiles/gear.dir/utils.cpp.o CMakeFiles/gear.dir/polygon.cpp.o -o gear  librenderer.a -lX11 -lXext -lGL 

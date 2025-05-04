@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_matrix4.dir/test_matrix4.cpp.o CMakeFiles/test_matrix4.dir/home/rittenhouse/programming/git/Renderer/src/matrix4.cpp.o CMakeFiles/test_matrix4.dir/home/rittenhouse/programming/git/Renderer/src/vector4.cpp.o -o test_matrix4  -lgtest -lpthread 

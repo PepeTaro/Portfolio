@@ -1,0 +1,1 @@
+/usr/bin/c++  -fopenmp CMakeFiles/triangle.dir/triangle.cpp.o CMakeFiles/triangle.dir/x11.cpp.o CMakeFiles/triangle.dir/utils.cpp.o -o triangle  librenderer.a -lX11 -lXext -lGL 

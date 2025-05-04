@@ -1,0 +1,1 @@
+/usr/bin/c++  -fopenmp CMakeFiles/utils_test.dir/gtest_main.cpp.o CMakeFiles/utils_test.dir/utils_test.cpp.o CMakeFiles/utils_test.dir/utils_for_test.cpp.o -o utils_test  libconvnet.a -lgtest 

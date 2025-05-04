@@ -1,0 +1,1 @@
+/usr/bin/c++  -fopenmp CMakeFiles/sun_earth.dir/sun_earth.cpp.o CMakeFiles/sun_earth.dir/x11.cpp.o CMakeFiles/sun_earth.dir/utils.cpp.o CMakeFiles/sun_earth.dir/polygon.cpp.o CMakeFiles/sun_earth.dir/texture_loader.cpp.o -o sun_earth  librenderer.a -lX11 -lXext -lGL 

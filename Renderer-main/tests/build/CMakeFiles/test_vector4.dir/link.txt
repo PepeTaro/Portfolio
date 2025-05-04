@@ -1,0 +1,1 @@
+/usr/bin/c++ CMakeFiles/test_vector4.dir/test_vector4.cpp.o CMakeFiles/test_vector4.dir/home/rittenhouse/programming/git/Renderer/src/vector4.cpp.o -o test_vector4  -lgtest -lpthread 

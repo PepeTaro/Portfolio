@@ -1,0 +1,1 @@
+/usr/bin/c++  -fopenmp CMakeFiles/cifar10_demo.dir/cifar10_demo.cpp.o -o cifar10_demo  libconvnet.a 

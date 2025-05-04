@@ -1,0 +1,8 @@
+/home/rittenhouse/programming/git/ConvNet/examples/build/CMakeFiles/rebuild_cache.dir
+/home/rittenhouse/programming/git/ConvNet/examples/build/CMakeFiles/edit_cache.dir
+/home/rittenhouse/programming/git/ConvNet/examples/build/CMakeFiles/cifar10_test.dir
+/home/rittenhouse/programming/git/ConvNet/examples/build/CMakeFiles/mnist_drawing.dir
+/home/rittenhouse/programming/git/ConvNet/examples/build/CMakeFiles/cifar10_demo.dir
+/home/rittenhouse/programming/git/ConvNet/examples/build/CMakeFiles/mnist_demo.dir
+/home/rittenhouse/programming/git/ConvNet/examples/build/CMakeFiles/mnist_test.dir
+/home/rittenhouse/programming/git/ConvNet/examples/build/CMakeFiles/convnet.dir

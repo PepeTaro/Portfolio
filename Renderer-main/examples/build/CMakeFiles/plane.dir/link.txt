@@ -1,0 +1,1 @@
+/usr/bin/c++  -fopenmp CMakeFiles/plane.dir/plane.cpp.o CMakeFiles/plane.dir/x11.cpp.o CMakeFiles/plane.dir/utils.cpp.o CMakeFiles/plane.dir/polygon.cpp.o CMakeFiles/plane.dir/texture_loader.cpp.o -o plane  librenderer.a -lX11 -lXext -lGL 

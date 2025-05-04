@@ -1,0 +1,1 @@
+/usr/bin/c++  -fopenmp CMakeFiles/light.dir/light.cpp.o CMakeFiles/light.dir/x11.cpp.o CMakeFiles/light.dir/utils.cpp.o CMakeFiles/light.dir/polygon.cpp.o -o light  librenderer.a -lX11 -lXext -lGL 

@@ -1,0 +1,1 @@
+/usr/bin/c++  -fopenmp CMakeFiles/shooter.dir/shooter.cpp.o CMakeFiles/shooter.dir/x11.cpp.o CMakeFiles/shooter.dir/utils.cpp.o CMakeFiles/shooter.dir/polygon.cpp.o -o shooter  librenderer.a -lX11 -lXext -lGL 

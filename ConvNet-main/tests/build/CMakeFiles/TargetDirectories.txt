@@ -1,0 +1,14 @@
+/home/rittenhouse/programming/git/ConvNet/tests/build/CMakeFiles/rebuild_cache.dir
+/home/rittenhouse/programming/git/ConvNet/tests/build/CMakeFiles/gtest_main.dir
+/home/rittenhouse/programming/git/ConvNet/tests/build/CMakeFiles/convnet.dir
+/home/rittenhouse/programming/git/ConvNet/tests/build/CMakeFiles/utils_test.dir
+/home/rittenhouse/programming/git/ConvNet/tests/build/CMakeFiles/im2col_test.dir
+/home/rittenhouse/programming/git/ConvNet/tests/build/CMakeFiles/conv_test.dir
+/home/rittenhouse/programming/git/ConvNet/tests/build/CMakeFiles/activations_test.dir
+/home/rittenhouse/programming/git/ConvNet/tests/build/CMakeFiles/losses_test.dir
+/home/rittenhouse/programming/git/ConvNet/tests/build/CMakeFiles/dense_test.dir
+/home/rittenhouse/programming/git/ConvNet/tests/build/CMakeFiles/optimizer_test.dir
+/home/rittenhouse/programming/git/ConvNet/tests/build/CMakeFiles/pooling_test.dir
+/home/rittenhouse/programming/git/ConvNet/tests/build/CMakeFiles/network_test.dir
+/home/rittenhouse/programming/git/ConvNet/tests/build/CMakeFiles/edit_cache.dir
+/home/rittenhouse/programming/git/ConvNet/tests/build/CMakeFiles/test.dir

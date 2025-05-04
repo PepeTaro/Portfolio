@@ -1,0 +1,1 @@
+/usr/bin/c++  -fopenmp CMakeFiles/mnist_demo.dir/mnist_demo.cpp.o -o mnist_demo  libconvnet.a -lsfml-graphics -lsfml-window -lsfml-system 

@@ -1,0 +1,5 @@
+/home/rittenhouse/programming/git/Renderer/tests/build/CMakeFiles/rebuild_cache.dir
+/home/rittenhouse/programming/git/Renderer/tests/build/CMakeFiles/test.dir
+/home/rittenhouse/programming/git/Renderer/tests/build/CMakeFiles/edit_cache.dir
+/home/rittenhouse/programming/git/Renderer/tests/build/CMakeFiles/test_matrix4.dir
+/home/rittenhouse/programming/git/Renderer/tests/build/CMakeFiles/test_vector4.dir

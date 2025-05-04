@@ -1,0 +1,1 @@
+/usr/bin/c++  -fopenmp CMakeFiles/sierpinski.dir/sierpinski.cpp.o CMakeFiles/sierpinski.dir/x11.cpp.o CMakeFiles/sierpinski.dir/utils.cpp.o CMakeFiles/sierpinski.dir/polygon.cpp.o -o sierpinski  librenderer.a -lX11 -lXext -lGL 
