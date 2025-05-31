@@ -1,0 +1,14 @@
+<div id="deposit">
+  <h2 id="deposit-title">コインを預ける</h2>
+  <form class="form-inline" id="deposit-form" method="post">
+    <div class="form-group">
+      
+      <div class="input-group">
+	<label for="ID">コインを預けるID</label>
+	<input type="text" class="form-control" id="deposit-id" placeholder="コインを預けるID" name="ID" maxlength="100" pattern=".{1,}" required title="少なくとも1桁以上">	
+      </div>      
+    </div>
+    <button type="submit" class="btn btn-primary">預ける</button>
+  </form>
+</div>
+<script src="{{ url_for('static', filename='javascript/deposit.js') }}"></script>

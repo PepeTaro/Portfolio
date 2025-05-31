@@ -1,0 +1,23 @@
+<div id="demo">
+  <div id="upper-wrapper">
+    <div class="tab">
+      <button class="tablinks" onclick="loadPage('overview')">パラメータ</button>
+      <button class="tablinks" onclick="loadPage('register')">登録</button>
+      <button class="tablinks" onclick="loadPage('send')">送信</button>
+      <button class="tablinks" onclick="loadPage('deduct')">引き出し</button>
+      <button class="tablinks" onclick="loadPage('deposit')">預金</button>
+      <button class="tablinks" onclick="loadPage('cheat')">ダブルスペンド</button>
+    </div>  
+    <div id="upper-tab-wrapper"></div>
+  </div>
+  
+  <div id="lower-wrapepr">
+    <div class="tab">
+      <button class="tablinks" onclick="loadPage('accounts')">アカウント</button>
+      <button class="tablinks" onclick="loadPage('wallets')">ウォレット</button>
+      <button class="tablinks" onclick="loadPage('used')">使用済みコイン</button>
+      <button class="tablinks btn btn-success active" onclick="refreshAllTables()" style="float:right;">更新</button>
+    </div>
+    <div id="lower-tab-wrapper"></div> 
+  </div>
+</div>

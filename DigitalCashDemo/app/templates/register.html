@@ -1,0 +1,15 @@
+<div id="register">
+  <h2 id="register-title">アカウント登録</h2>
+  <form class="form-inline" id="register-form" method="post">
+    <div class="form-group">
+      <div class="input-group">
+	<label for="registerdName">ユーザー名</label>
+	<input type="text" class="form-control" id="registerdName" placeholder="ユーザー名" name="userName" maxlength="100" pattern=".{1,}" required title="少なくとも1桁以上">
+	<label for="registerdID">生成されたID</label>
+	<input type="text" class="form-control" id="registerdID" placeholder="ID" readonly>	
+      </div>      
+    </div>
+    <button type="submit" class="btn btn-primary">登録</button>
+  </form>
+</div>
+<script src="{{ url_for('static', filename='javascript/register.js') }}"></script>

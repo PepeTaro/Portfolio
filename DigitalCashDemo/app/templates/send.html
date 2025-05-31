@@ -1,0 +1,17 @@
+<div id="send">
+  <h2 id="send-title">コインを送信</h2>
+  <form class="form-inline" id="send-form" method="post">
+    <div class="form-group">
+      
+      <div class="input-group">
+	<label for="accounts-sender-id">送り手のID</label>
+	<input type="text" class="form-control" id="accounts-sender-id" placeholder="送り手のID" name="senderID" maxlength="100"  pattern=".{1,}" required title="少なくとも1桁以上">
+	
+	<label for="accounts-receiver-id">受け手のID</label>
+	<input type="text" class="form-control" id="accounts-receiver-id" placeholder="受け手のID" name="receiverID" maxlength="100" pattern=".{1,}" required title="少なくとも1桁以上">	
+      </div>      
+    </div>
+    <button type="submit" class="btn btn-primary">送信</button>    
+  </form>
+</div>
+<script src="{{ url_for('static', filename='javascript/send.js') }}"></script>

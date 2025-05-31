@@ -1,0 +1,15 @@
+<div id="deduct">
+  <h2 id="deduct-title">コインを引き出す</h2>
+  <form class="form-inline" id="deduct-form" method="post">
+    <div class="form-group">
+      
+      <div class="input-group">
+	<label for="ID">コインを引き出すID</label>
+	<input type="text" class="form-control" id="deduct-id" placeholder="コインを引き出すID" name="ID" maxlength="100" pattern=".{1,}" required title="少なくとも1桁以上">
+      </div>      
+    </div>
+    <button type="submit" class="btn btn-primary">引き出す</button>
+  </form>
+</div>
+<script src="{{ url_for('static', filename='javascript/deduct.js') }}"></script>
+

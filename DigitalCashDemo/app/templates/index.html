@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename= 'css/style.css') }}">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <title>デジタルキャッシュ　デモ</title>    
+  </head>
+  
+  <body>
+    
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+      <button class="btn btn-default navbar-brand" onclick="loadPage('about')">説明</button>
+      <button class="btn btn-default navbar-brand" onclick="loadPage('demo')">デモ</button>
+    </nav>
+
+    <div id="main-wrapper" style="padding:0.5rem 1rem;"></div>
+
+    <!-- jQuery -->    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+    <script src="{{ url_for('static', filename='javascript/index.js') }}"></script>    
+    <script src="{{ url_for('static', filename='javascript/lower-tables.js') }}"></script>
+    <script src="{{ url_for('static', filename='javascript/upper-tables.js') }}"></script>
+
+  </body>
+</html>

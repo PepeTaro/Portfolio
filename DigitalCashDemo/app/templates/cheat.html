@@ -1,0 +1,27 @@
+<div id="cheat">
+  <h2 id="cheat-title">ダブルスペンド</h2>
+  <form class="form-inline" id="cheat-form" method="post">
+    <div class="form-group">
+      
+      <div class="input-group">
+
+	<div id="sender-of-double_spend">
+	  <label for="cheat-sender-id">送り手</label>
+	  <input type="text" class="form-control" id="cheat-sender-id" placeholder="送り手のID" name="senderID" maxlength="100" pattern=".{1,}" required title="少なくとも1桁以上">
+	</div>
+	
+	<div id="receivers-of-double-spend">
+	  <label for="cheat-receiver1-id">受け手1のID</label>
+	  <input type="text" class="form-control" id="cheat-receiver1-id" placeholder="受け手1のID" name="receiver1ID" maxlength="100" pattern=".{1,}" required title="少なくとも1桁以上">
+	  
+	  <label for="cheat-receiver2-id">受け手2のID</label>
+	  <input type="text" class="form-control" id="cheat-receiver2-id" placeholder="受け手2のID" name="receiver2ID" maxlength="100" pattern=".{1,}" required title="少なくとも1桁以上">
+	</div>
+	
+      </div>
+      
+    </div>
+    <button type="submit" class="btn btn-primary">ダブルスペンド</button>    
+  </form>
+</div>
+<script src="{{ url_for('static', filename='javascript/cheat.js') }}"></script>
